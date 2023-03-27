@@ -1,0 +1,29 @@
+{
+  "name": "mdm-database-lib",
+  "version": "1.0.0",
+  "description": "Library to connect to database and perform CRUD operations",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "author": "Virtus",
+  "license": "ISC",
+  "type": "commonjs",
+  "exports": {
+    "require": "./lib/index.js",
+    "node": "./lib/index.js",
+    "default": "./lib/index.js",
+    "import": "./lib/index.d.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@nestjs/typeorm": "^9.0.1",
+    "mysql2": "^3.2.0",
+    "typeorm": "^0.3.12"
+  }
+}
